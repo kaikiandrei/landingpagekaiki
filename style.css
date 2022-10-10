@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: white;
+}
+
+#presentation{
+    background-image: url(.//IMAGE/cafe.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#presentation::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.container-cabecalho{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    width: 100%;
+    position: relative;
+}
+
+.logo{
+    display: flex;
+    color: rgba(218, 165, 32, 0.76);
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+}
+
+/*nav*/
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+ul li a:hover{
+    color: goldenrod;
+}
+
+.btn-cardapio{
+    background-color: rgba(218, 165, 32, 0.404);
+    padding: 0.9rem 1.9rem;
+}
+
+/*main*/
+
+.meio{
+    display: flex;
+    max-width: 100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.esquerda{
+    max-width: 100%;
+}
+
+.title h1{
+    font-size: 50px;
+    color: goldenrod;
+}
+
+.esquerda p{
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+button{
+    color:#fff;
+    background-color: rgba(218, 165, 32, 0.151);
+    padding: 2rem 4rem;
+    border: 2px solid goldenrod;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    margin: 3rem;
+    font-size: 1.5rem;
+}
+
+.quemsomos button a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+button:hover{
+    color: goldenrod;
+}
+
+aside{
+    display: none;
+}
+
+.section-title{
+    font-size: 4rem;
+    font-weight: 500px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.product1-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-info p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}
+
+/*formuilario*/
+
+#form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-info{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: goldenrod;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    margin: 3rem;
+}
+
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+}
+
+.login-button button{
+    border: none;
+    background-color: #fff;
+    padding: 0.4 rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-button button:hover{
+    background-color: gold;
+}
+
+.login-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: goldenrod;
+}
+
+.login-button button a:hover{
+    color: #fff ;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #fff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.form-header h6{
+    margin: 1rem;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover{
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid gold;
+}
+
+.input-box label,
+.gender-title h6{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.gender-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gender-input{
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input{
+    margin-right: 0.35rem;
+}
+
+.gender-input label{
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button button{
+    width: 80%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #fff;
+    padding: 0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.continue-button button:hover{
+    background-color: gold;
+
+}
+
+.continue-button button a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: goldenrod;
+}
+
+/*quemsomos*/
+
+#information{
+    display: flex;
+    max-width: 100%;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.information-text p{
+    font-size: 1rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+    padding: 7rem;
+}
+
+.information h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+ 
+/*footer*/
+
+#footer{
+    background-color: rgba(218, 165, 32, 0.26);
+    padding: 4.5em 0 3.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer > .inner{
+    margin: 0 auto;
+    width: 80em;
+    max-width: calc(100% - 6em);
+    justify-content: center;
+}
+
+/*seção padaria*/
+
+#product .product{
+    flex-direction: column;
+    max-width: 1280px;
+    margin:0 auto;
+    padding: 100px 0;
+}
+#product .product-header h1{
+    margin-bottom: 50px;
+}
+
+#product .all-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#product .product-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#product .product-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, goldenrod, rgba(255, 217, 0, 0.308));
+}
+
+#product .product-info h1{
+    font-size: 4rem;
+    font-weight: 500px;
+
+}
+
+#product .product-info h2{
+    font-size: 1.8rem;
+    font-weight: 500px;
+    margin-top: 10px;
+}
+
+#product .product1-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#product .product1-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg #29323c 0%, #485563 100%);
+    opacity: 0.7;
+
+}
+
+#product .product1-img img{
+    transition: 0.5s ease transform;
+}
+
+#product .product-item:hover .product1-img img{
+    transform: scale(1.1);
+
+}
+
+/*media screen main*/
+
+@media screen and (max-width:740px){
+
+    ul{ 
+        display: none;
+    }
+
+
+    .links{
+        display: block;
+    }
+
+    .logo{
+        margin-right: 15rem;
+    }
+
+    aside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        overflow: hidden;
+    }
+
+    #Barra-menu{
+        background-color: rgba(218, 165, 32, 0.185);
+        width: 300px;
+        height: 100vh;
+        transition: 0.3s all;
+    }
+
+    .icon-menu ion-icon{
+        width: 45px;
+        height: 45px;
+        margin-right: 1.5rem;
+        margin-top: 2rem;
+        color: goldenrod;
+    }
+
+    #Barra-menu ul{
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        line-height: 5rem;
+    }
+
+    .C-icon{
+        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        overflow: hidden;
+    }
+
+    .C-icon{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:580px){
+    .title h1{
+        font-size: 2.2rem;
+        margin-left: 1.5rem;        
+    }
+
+    .esquerda p{
+        font-size: 1rem;
+        margin-left: 1.5rem;
+    }
+
+    button{
+        margin-left: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:440px){
+  
+    .esquerda p{
+        width: 300px;
+    }
+
+}
+
+/*media screen section product*/
+
+@media only screen and (min-width: 768px) {
+    #product .product-item{
+        flex-direction: row;
+    }
+
+    #product .all-product .product-info{
+        height: 100%;
+    }
+
+    #product .all-product .product1-img{
+        height: 100%;
+    }
+
+    #product .product-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+
+}
+
+/*media screen form*/
+
+@media screen and(max-width: 1330px){
+    
+    #form-info{
+        width: 50%;
+    }
+
+    #form{
+        width: 100%;
+    }
+}
+
+@media screen and(max-width: 1064px){
+    .font-info{
+        width: 90%;
+        height: auto;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        overflow-y:scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .gender-input{
+        margin-top: 2rem;
+    }
+
+    .gender-group{
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+}
+
+
+
+/*media screen footer*/
+
+@media screen and(max-width: 1280px) {
+    #footer{
+        padding: 5em 0 3em 0;
+    }
+
+    .contact h2{
+        line-height: 1.5em;
+        letter-spacing: 0.04em;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .contact-icons p{
+        font-size: 7rem;
+    }
+    
+}
+
+@media screen and(max-width: 580px) {
+    #footer{
+        padding: 3em 0 1.5em 0;
+    }
+
+    .contact h2{
+        line-height: 0.7em;
+        letter-spacing: 0.02em;
+        margin: 0 0 0.7rem 0;
+    }
+
+    .contact-icons p{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and(max-width: 440px) {
+    #footer{
+        padding: 1.5em 0 0.7em 0;
+    }
+
+    .contact h2{
+        line-height: 0.3em;
+        letter-spacing: 0.01em;
+        margin: 0 0 0.3rem 0;
+    }
+
+    .contact-icons p{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>LANDING PAGE - TESTE</title>
+    </head>
+
+    <body>
+
+        <main id="presentation">
+            <header class="container-cabecalho">
+                <div class="logo">
+                  <img src="./IMAGE/LOGO.jpg" alt="logotipo">
+                </div>
+                <ul>
+                   <li><a href="#presentation">HOME</a></li>
+                   <li><a href="#footer">CONTATO</a></li>
+                   <li><a href="#product" class="btn-cardapio">CARDAPIO</a></li>
+                </ul><!--nav-->
+            </header>
+
+            <aside>
+                <div class="icon-menu" onclick="abrirmenu()">                                                                                                                                                                                                                                                          
+                    <span>
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </span>
+                </div>
+                <div id="Barra-menu" >
+                    <ul class="links">
+                        <li><a href="#presentation">HOME</a></li>
+                        <li><a href="#footer">CONTATO</a></li>
+                        <li><a href="#product" class="btn-cardapio">CARDAPIO</a></li>
+                    </ul>
+                    <div class="C-icon">
+                        <span class="Icon"><ion-icon name="logo-instagram"></ion-icon></span>
+                        <span class="Icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                        <span class="Icon"><ion-icon name="logo-twitter"></ion-icon></span>
+                    </div><!--menu icon-->
+                </div>
+            </aside>
+
+            <div class="meio">
+                <div class="esquerda">
+                    <div class="title">
+                        <h1>A vida só começa</h1>
+                        <h1>depois do café!</h1>
+                    </div>
+
+                    <p> Coloca um sorriso no rosto, toma um gole de cafe 
+                        <br>e vai conquistar o mundo! 
+                    </p>
+                    <div class="quemsomos">
+                        <button><a href="#information">QUEM SOMOS</a></button>
+                    </div>
+                </div>
+
+                <div>
+                </div> <!--Lado direito vaizio devido a foto do background-->
+            </div>
+        </main>
+
+        <section id="product">
+            <div class="product container">
+                <div class="product header">
+                    <h1 class="section-title"><span>Padaria</span></h1>
+                </div>
+                <div class="all-product">
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h1>Pão francês</h1>
+                            <h3>Fresquinhooo!</h3>
+                            <p>Feito com muito amor, carinho e excelentes profissionais.</p>
+                        </div>
+                        <div class="product1-img">
+                            <img src=".//IMAGE/paes-tela.jpg" alt="paes1">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h1>Café com os melhores grãos</h1>
+                            <h3>Huuuumm!</h3>
+                            <p>Você nunca mais vai quer provar outro café.</p>
+                        </div>
+                        <div class="product1-img">
+                            <img src=".//IMAGE/cafe-amargo.jpg" alt="paes1">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h1>Ambiente impecável</h1>
+                            <h3>Local aromatizado com cheirinho de café</h3>
+                            <p>Atendimento unico e profissionais capacitados.</p>
+                        </div>
+                        <div class="product1-img">
+                            <img src=".//IMAGE/local-pao-e-cafe.jpg" alt="paes1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--produtos-->
+
+        <section id="form">
+            <div class="form-info">
+                <form action="#">
+                    <div class="form-header">
+                        <div class="title-form">
+                            <h1>Cadastre-se</h1>
+                            <h6>Faça o seu pedido sem sair de casa.</h6>
+                        </div>
+                        <div class="login-button">
+                            <button><a href="#">Entrar</a></button>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="firstname">Primeiro nome</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Digite seu primeiro nome" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="lastname">Sobrenome</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="number">Telefone</label>
+                            <input type="tel" name="number" id="number" placeholder="(xx) xxxx-xxxx" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="password">Senha</label>
+                            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="password">Confirme sua senha</label>
+                            <input type="password" name="confirmpassword" id="password" placeholder="Confirme sua senha" required>
+                        </div>
+
+                    </div>
+                    <div class="gender-inputs">
+                        <div class="gender-title">
+                            <h6>Gêneros</h6>
+                        </div>
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input type="radio" id="female" name="gender">
+                                <label for="female">Feminino</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input type="radio" id="male" name="gender">
+                                <label for="male">Masculino</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input type="radio" id="others" name="gender">
+                                <label for="others">Outros</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input type="radio" id="none" name="gender">
+                                <label for="none">Prefiro nao dizer</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="continue-button">
+                        <button><a href="#">Continuar</a></button>
+                    </div>
+                </form>
+            </div>
+        </section> <!--formulario-->
+
+        <section id="information">
+            <div class="information">
+                <h1>QUEM SOMOS?</h1>
+                <div class="information-text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </section><!--quem somos-->
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="split-style1">
+                    <div class="contact">
+                        <h2>Contato</h2>
+                        <ul class="contact-icons ">
+                            <li>
+                                <p>End - Rua beepdigital - Sao Paulo - SP</p>
+                                <p>Tel/Cel - (11) 4444-4444 / (11) 9999-9999 / WhatsApp</p>
+                                <p>Email - kafecomk@gmail.com</p>
+    
+                            </li>
+                        </ul>
+                        <div class="C-icon">
+                            <h6>Siga nas redes sociais:</h6>
+                            <span class="Icon"><ion-icon name="logo-instagram"></ion-icon></span>
+                            <span class="Icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                            <span class="Icon"><ion-icon name="logo-twitter"></ion-icon></span>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </footer> <!--rodape-->
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="app.js"></script>
+
+    </body>
+</html>
